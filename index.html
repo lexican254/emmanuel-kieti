@@ -3,16 +3,7 @@
 <title>Lexican</title>
 </head>
 <body>
-<h2>Password Input Form</h2>
-    <form action="/submit" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
-        <button type="submit">Login</button>
-    </form>
+
     <style>
     body{
          background-image:url('https://i.pinimg.com/236x/2e/68/11/2e6811e6add4e9629c693fc51116f74b.jpg')
@@ -137,28 +128,7 @@ img {
 <iframe width="300" height="390"src="https://www.youtube.com/embed/GLhH-dKXMEkallowfullscreen></iframe>
 <iframe width="300" height="390"src="https://www.youtube.com/embed/R9Yj1IKuUTc"allowfullscreen></iframe>
  <script>
-        // JavaScript to handle form submission
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent actual form submission
-            
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            // Example: Hardcoded password validation
-            if (username && password) {
-                if (password === "1234") { // Replace "1234" with your desired password
-                    document.getElementById('result').textContent = `Welcome, ${username}!`;
-                    document.getElementById('result').style.color = "green";
-                } else {
-                    document.getElementById('result').textContent = "Invalid password. Try again.";
-                    document.getElementById('result').style.color = "red";
-                }
-            } else {
-                document.getElementById('result').textContent = "Please fill out all fields.";
-                document.getElementById('result').style.color = "red";
-            }
-        });
-    </script>
+        
 </body>
 </html>
 
